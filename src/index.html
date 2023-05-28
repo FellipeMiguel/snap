@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon-32x32.png" />
+
+    <title>Snap</title>
+
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="bg-almost-white">
+    <header>
+      <div class="w-full">
+        <nav class="md:px-8 md:py-6 px-2" role="navigation">
+          <div class="mx-auto p-4 flex flex-wrap items-center sm:flex-no-wrap">
+            <div class="mr-4 sm:mr-8 lg:mr-12 xl:mr-16">
+              <a href="#" rel="home">
+                <img src="./assets/img/logo.svg" alt="" />
+              </a>
+            </div>
+            <div class="ml-auto sm:hidden">
+              <button
+                class="flex items-center px-3 py-2"
+                id="navToggle"
+                type="button"
+                aria-controls="navContent"
+                aria-expanded="false">
+                <svg
+                  class="h-3 w-3"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <title>Menu</title>
+                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="hidden w-full sm:w-auto sm:flex-grow sm:flex sm:items-center"
+              id="navContent"
+              aria-labelledby="navToggle">
+              <ul
+                class="flex flex-col mt-4 -mx-4 pt-4 sm:flex-row sm:items-center sm:mx-0 sm:mt-0 sm:pt-0 sm:mr-4 md:mr-8 sm:border-0">
+                <li>
+                  <!--Dropdown-->
+                  <div
+                    class="dropdown inline-block relative items-center space-x-2">
+                    <button
+                      class="dropdown-trigger text-medium-gray text-xl py-2 px-4 rounded inline-flex items-center"
+                      data-dropdown-trigger>
+                      <span class="mr-2">Feature</span>
+                      <span class="fas fa-chevron-down"></span>
+                    </button>
+                    <div
+                      class="dropdown-menu hidden absolute z-50 left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl"
+                      data-dropdown-menu>
+                      <a
+                        href="https://codepen.io/captproton/pen/dyoPELj"
+                        class="grid grid-cols-4 place-items-start items-center px-4 py-2 text-medium-gray hover:text-almost-black">
+                        <img class="" src="./assets/img/icon-todo.svg" alt="" />
+                        <span class="col-span-3">Todo List</span>
+                      </a>
+                      <a
+                        href="https://codepen.io/captproton/pen/dyoPELj"
+                        class="grid grid-cols-4 place-items-start items-center px-4 py-2 text-medium-gray hover:text-almost-black">
+                        <img
+                          class=""
+                          src="./assets/img/icon-calendar.svg"
+                          alt="" />
+                        <span class="col-span-3">Calendar</span>
+                      </a>
+                      <a
+                        href="https://codepen.io/captproton/pen/dyoPELj"
+                        class="grid grid-cols-4 place-items-start items-center px-4 py-2 text-medium-gray hover:text-almost-black">
+                        <img
+                          class=""
+                          src="./assets/img/icon-reminders.svg"
+                          alt="" />
+                        <span class="col-span-3">Todo List</span>
+                      </a>
+                      <a
+                        href="https://codepen.io/captproton/pen/dyoPELj"
+                        class="grid grid-cols-4 place-items-start items-center px-4 py-2 text-medium-gray hover:text-almost-black">
+                        <img
+                          class=""
+                          src="./assets/img/icon-planning.svg"
+                          alt="" />
+                        <span class="col-span-3">Todo List</span>
+                      </a>
+                    </div>
+                  </div>
+                  <!--Dropdown-->
+                </li>
+                <li>
+                  <a
+                    class="block px-4 py-1 sm:p-2 md:px-4 text-medium-gray text-xl hover:text-almost-black"
+                    href="#"
+                    >Company <span class="ml-2 fas fa-chevron-down"></span
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="block px-4 py-1 sm:p-2 md:px-4 text-medium-gray text-xl hover:text-almost-black"
+                    href="#"
+                    title="Link"
+                    >Careers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block px-4 py-1 sm:p-2 md:px-4 text-medium-gray text-xl hover:text-almost-black"
+                    href="#"
+                    title="Link"
+                    >About</a
+                  >
+                </li>
+              </ul>
+              <ul
+                class="flex flex-col mt-4 -mx-4 pt-4 sm:flex-row sm:items-center sm:mx-0 sm:ml-auto sm:mt-0 sm:pt-0 sm:border-0 text-center">
+                <li>
+                  <a
+                    class="block px-4 py-1 sm:p-2 md:px-4 text-medium-gray text-xl hover:text-almost-black"
+                    href="#"
+                    title="Link"
+                    >Login</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block px-4 py-1 sm:p-2 md:px-7 text-medium-gray text-xl hover:text-almost-black border border-medium-gray hover:border-almost-black rounded-xl"
+                    href="#"
+                    title="Link"
+                    >Register</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main
+      class="container mx-auto grid grid-flow-row md:grid-cols-2 gap-8 mt-9 mb-28 md:mb-40">
+      <div
+        class="col-span-1 text-center md:text-left px-4 flex flex-col md:block items-center gap-6 mt-12 md:mt-40">
+        <h1 class="text-4xl font-bold px-2 md:px-0 md:text-8xl md:mb-12">
+          Make remote work
+        </h1>
+        <p class="text-xl text-medium-gray md:mt-9 md:w-3/4 md:mb-12">
+          Get your team in sync, no matter you location. Streamline processes,
+          create team ritual, and watch productivity soar.
+        </p>
+        <button
+          class="py-3 w-36 text-almost-white text-xl bg-almost-black hover:bg-almost-white hover:text-almost-black hover:border hover:border-almost-black rounded-xl font-bold">
+          Learn more
+        </button>
+
+        <div
+          class="grid grid-cols-4 place-items-center md:place-items-start mt-10 md:mt-40 px-2">
+          <img
+            class="col-span-1 w-3/4"
+            src="./assets/img/client-databiz.svg"
+            alt="" />
+          <img
+            class="col-span-1 w-3/4"
+            src="./assets/img/client-audiophile.svg"
+            alt="" />
+          <img
+            class="col-span-1 w-3/4"
+            src="./assets/img/client-meet.svg"
+            alt="" />
+          <img
+            class="col-span-1 w-3/4"
+            src="./assets/img/client-maker.svg"
+            alt="" />
+        </div>
+      </div>
+      <div
+        class="col-span-1 place-self-center order-first md:order-last md:h-4/5 md:w-4/5">
+        <img
+          class="hidden md:block"
+          src="./assets/img/image-hero-desktop.png"
+          alt="" />
+        <img
+          class="block md:hidden"
+          src="./assets/img/image-hero-mobile.png"
+          alt="" />
+      </div>
+    </main>
+    <footer class="flex items-center justify-center px-2">
+      <p class="text-medium-gray text-sm md:text-xl">Challenge by&nbsp;</p>
+      <a
+        class="text-medium-gray text-sm md:text-xl hover:text-almost-black font-bold"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >
+      <p class="text-medium-gray text-sm md:text-xl">. Coded by&nbsp;</p>
+      <a
+        class="text-medium-gray text-sm md:text-xl hover:text-almost-black font-bold"
+        href="http://www.github.com/FellipeMiguel"
+        >Fellipe M Dino</a
+      >.
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
